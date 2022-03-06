@@ -1,6 +1,6 @@
 package com.jacaranda.baraja;
 
-public abstract class Baraja {
+public abstract class Baraja implements Repartible {
 	protected int numCartas;
 	private int siguiente;
 	protected Carta[] cartas;
@@ -9,6 +9,7 @@ public abstract class Baraja {
 	public Baraja(int numCartas) {
 		this.numCartas = numCartas;
 		this.siguiente = 0;
+		barajar();
 	}
 	
 	public void barajar() {

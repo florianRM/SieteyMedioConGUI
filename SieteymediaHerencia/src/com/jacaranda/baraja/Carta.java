@@ -27,42 +27,6 @@ public class Carta {
 	}
 
 	@Override
-	public String toString() {
-		String resultado = "";
-		switch (this.number) {
-		case 1: {
-		}
-		case 2: {
-		}
-		case 3: {
-		}
-		case 4: {
-		}
-		case 5: {
-		}
-		case 6: {
-		}
-		case 7: {
-			resultado = "" + this.number;
-			break;
-		}
-		case 8: {
-			resultado = "Sota";
-			break;
-		}
-		case 9: {
-			resultado = "Caballo";
-			break;
-		}
-		case 10: {
-			resultado = "Rey";
-			break;
-		}
-		}
-		return resultado + " de " + palo;
-	}
-
-	@Override
 	public int hashCode() {
 		return Objects.hash(number, palo);
 	}

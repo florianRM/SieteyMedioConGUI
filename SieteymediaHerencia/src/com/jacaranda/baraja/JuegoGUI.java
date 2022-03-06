@@ -36,10 +36,8 @@ public class JuegoGUI implements ActionListener {
 		
 		if (tipoBaraja == 1) {
 			baraja = new BarajaEspannola();
-			baraja.barajar();
 		}else {
 			baraja = new BarajaInglesa();
-			baraja.barajar();
 		}
 		
 		this.numCartasBanca =0;
