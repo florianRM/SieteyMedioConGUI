@@ -25,6 +25,11 @@ public class Carta {
 	public String getPalo() {
 		return this.palo;
 	}
+	
+	@Override
+	public String toString() {
+		return "Carta [number=" + number + ", palo=" + palo + "]";
+	}
 
 	@Override
 	public int hashCode() {
